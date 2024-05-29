@@ -20,6 +20,7 @@ public class Maison {
 	 * @param nvPiece nouvelle pièce à ajouter
 	 */
 	public void ajouterPiece(Piece nvPiece) {
+		if (nvPiece != null) {
 		
 		// On est obligé d'agrandir le tableau initial de 1 à chaque ajout
 		// d'une nouvelle pièce
@@ -40,9 +41,9 @@ public class Maison {
 		// Enfin on affecte newTab à pieces
 		this.pieces=newTab;
 	}
-	
+	}
 	public int nbPieces() {
-		return pieces.length-1;
+		return pieces.length;
 	}
 
 	/** Retourne la superficie d'un étage
